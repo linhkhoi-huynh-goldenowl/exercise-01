@@ -93,3 +93,26 @@ Cho sẵn một input kiểu dữ liệu String. Kiểm tra xem input đã đón
 - Gõ lệnh bên dưới để chạy unit test
 > flutter test test/unit_test_4_test.dart
 
+# Game 1
+
+## Đề bài:
+Viết game búa kéo bao, đấu với máy.
+
+Người chơi enter lựa chọn. Máy random. sau đó so sánh kết quả.
+
+Nhập exit để thoát, Sau khi thoát thì thông báo điểm số
+
+
+## Output:
+- Input:
+
+> Welcome to Rock, Paper, Scissors. \nType 'exit' to stop the game
+> Please choose Rock, Paper or Scissors: "
+> // After user input -> show the result
+> // After user exit - > show total score
+
+## Cách chạy game
+- Vào VSCode mở folder exercise-01\game
+- Gõ lệnh bên dưới để chạy game
+> dart run bin/game_1.dart
+
