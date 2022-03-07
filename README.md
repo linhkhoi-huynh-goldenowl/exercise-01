@@ -136,4 +136,29 @@ Nếu bằng thì user thắng, reset game và trả về điểm số
 - Gõ lệnh bên dưới để chạy game
 > dart run bin/game_2.dart
 
+# Game 3
+
+## Đề bài:
+Viết game “*cows and bulls*”
+
+- Random 4 số
+- Hỏi user đoán 4 số đó. Nếu với mỗi số nếu nếu đoán đúng cả vị trí thì cows ++, nếu có chứa nhưng mà khác vị trí thì bulls++
+- Khi đoán đúng cả 4 số thì thắng
+
+Ví dụ random 3684, và người dùng nhập 1234 thì cows = 1 (số 4) và bulls = 1 (số 3)
+
+
+## Output:
+
+> // Generate random number Range is between 1000 and 9999
+> Welcome to Cows and Bulls\nType 'exit' to stop the game
+> Please choose a four digit number:
+> Incorrect number. Make sure to give 4 digit number
+> Attempts: $attempts \nCows: $cows, Bulls: $bulls
+## Cách chạy game
+- Vào VSCode mở folder exercise-01\game
+- Gõ lệnh bên dưới để chạy game
+> dart run bin/game_3.dart
+
+
 
