@@ -1,7 +1,7 @@
 # exercise-01
 
 ## Đề bài:
-- Cho sẵn một input kiểu dữ liệu String. Kiểm tra xem input đã đóng mở ngoặc đúng chưa trả về True hoặc False
+Cho sẵn một input kiểu dữ liệu String. Kiểm tra xem input đã đóng mở ngoặc đúng chưa trả về True hoặc False
 ## Ví dụ
 - Input:
 
@@ -15,7 +15,7 @@
 # Unit test 1
 
 ## Đề bài:
-- Đầu vào là một số nguyên, trả về danh sách các ước của số nguyên đó.
+Đầu vào là một số nguyên, trả về danh sách các ước của số nguyên đó.
 
 ## Ví dụ
 - Input:
@@ -34,7 +34,7 @@
 # Unit test 2
 
 ## Đề bài:
-- Đầu vào là 2 danh sách, trả về danh sách chỉ chứa các số mà có trong 2 mảng đầu vào. Các số không được trùng
+Đầu vào là 2 danh sách, trả về danh sách chỉ chứa các số mà có trong 2 mảng đầu vào. Các số không được trùng
 
 ## Ví dụ
 - Input:
@@ -53,7 +53,7 @@
 # Unit test 3
 
 ## Đề bài:
-- Đầu vào là 1 số nguyên, trả về true nếu số đó là số nguyên tố, false là ngược lại
+Đầu vào là 1 số nguyên, trả về true nếu số đó là số nguyên tố, false là ngược lại
 
 ## Ví dụ
 - Input:
@@ -68,3 +68,28 @@
 - Vào VSCode mở folder exercise-01\print_divisor
 - Gõ lệnh bên dưới để chạy unit test
 > flutter test test/unit_test_3_test.dart
+
+# Unit test 4
+
+## Đề bài:
+Đầu vào là chuỗi, trả về true nếu chuỗi đó thoả điều kiện: 
+- Tối thiểu 6 ký tự
+- Chứa ít nhất 1 số
+- Chứa ít nhất 1 ký tự đặc biệt
+- Chứa ít nhất 1 chữ cái
+
+
+## Ví dụ
+- Input:
+
+> "abcdef123@"
+
+- Output:
+
+> "true"
+
+## Cách chạy unit test
+- Vào VSCode mở folder exercise-01\print_divisor
+- Gõ lệnh bên dưới để chạy unit test
+> flutter test test/unit_test_4_test.dart
+
