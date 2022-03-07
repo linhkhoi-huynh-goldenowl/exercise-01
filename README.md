@@ -186,5 +186,30 @@ Sau đó hiển thị các từ mà người chơi đã đoán đúng
 - Gõ lệnh bên dưới để chạy game
 > dart run bin/game_4.dart
 
+# Execrise 1
+
+## Đề bài:
+Input: int squareSize
+
+output: print a square with input size squareSize
+
+## Input
+
+> n = 3
+
+## Output:
+
+>  --- --- ---
+> |   |   |   |
+>  --- --- ---
+> |   |   |   |
+>  --- --- ---
+> |   |   |   |
+>  --- --- ---
+## Cách chạy game
+- Vào VSCode mở folder exercise-01\game
+- Gõ lệnh bên dưới để chạy game
+> dart run bin/exercise_1.dart
+
 
 
