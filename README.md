@@ -104,7 +104,6 @@ Nhập exit để thoát, Sau khi thoát thì thông báo điểm số
 
 
 ## Output:
-- Input:
 
 > Welcome to Rock, Paper, Scissors. \nType 'exit' to stop the game
 > Please choose Rock, Paper or Scissors: "
@@ -115,4 +114,26 @@ Nhập exit để thoát, Sau khi thoát thì thông báo điểm số
 - Vào VSCode mở folder exercise-01\game
 - Gõ lệnh bên dưới để chạy game
 > dart run bin/game_1.dart
+
+
+# Game 2
+
+## Đề bài:
+Random số từ 1 đến 100, sau đó hỏi user đoán. và gợi ý user nhỏ hơn, lớn hơn, hay bằng
+
+Nếu bằng thì user thắng, reset game và trả về điểm số
+
+
+## Output:
+
+> Type exit to quit the game
+> Please choose a number between 0 and 100:
+> -> You are higher
+> -> You are lower
+> Bingo! You tried $count times\n
+## Cách chạy game
+- Vào VSCode mở folder exercise-01\game
+- Gõ lệnh bên dưới để chạy game
+> dart run bin/game_2.dart
+
 
