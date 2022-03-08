@@ -15,8 +15,9 @@ void main(List<String> arguments) {
 
   print("Welcome to Wheel of Fortune\nType 'exit' to stop the game\n");
   print("\n");
+  List guess = <String>[];
   for (var ques in questions) {
-    List guess = <String>[];
+    guess = [];
     do {
       if (showDisplay(ques, guess).contains("_")) {
         print(showDisplay(ques, guess));
@@ -28,7 +29,9 @@ void main(List<String> arguments) {
       print("Please guess a letter:");
 
       line = stdin.readLineSync(encoding: utf8) ?? '?';
-
+      if (line == "exit") {
+        break;
+      }
       if (line.length > 1 || line.isEmpty) {
         print("Please guess ONE letter");
       } else {
@@ -37,6 +40,9 @@ void main(List<String> arguments) {
         }
       }
     } while (line.toLowerCase() != "exit");
+    if (line == "exit") {
+      break;
+    }
   }
 }
 
