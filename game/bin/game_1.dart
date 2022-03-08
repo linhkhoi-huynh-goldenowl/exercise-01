@@ -3,73 +3,83 @@ import 'dart:io';
 import 'dart:math';
 
 void main(List<String> arguments) {
-  
   int score = 0;
   String? line;
+  print("Welcome to Rock, Paper, Scissors. \nType 'exit' to stop the game");
   do {
     int botTurn = Random().nextInt(3);
-    print("Welcome to Rock, Paper, Scissors. \nType 'exit' to stop the game");
+
     line = stdin.readLineSync(encoding: utf8);
-    switch (line?.toLowerCase()) {
-      case "rock":
-        {
-          print("Bot was turn ${botLabel(botTurn).toUpperCase()}");
-          if (botTurn == 0) {
-            
-            score++;
-          } else {
-            score--;
-          }
-        }
-        break;
-
-      case "paper":
-        {
-          print("Bot was turn ${botLabel(botTurn).toUpperCase()}");
-          if (botTurn == 1) {
-            score++;
-          } else {
-            score--;
-          }
-        }
-        break;
-
-      case "scissors":
-        {
-          print("Bot was turn ${botLabel(botTurn).toUpperCase()}");
-          if (botTurn == 2) {
-            score++;
-          } else {
-            score--;
-          }
-        }
-        break;
-
-      case "exit":
-        {
-          print(score);
-        }
-        break;
-
-      default:
-        {}
-        break;
+    if (line?.toLowerCase() == "exit") {
+      break;
     }
-  } while (line?.toLowerCase() != "exit");
+    int result = getResult(line!, botLabel(botTurn));
+    if (result == -2) {
+      print("PLEASE TYPE RIGHT ANSWER!!!\n");
+    } else {
+      score += result;
+    }
+
+    print("Your score is $score");
+  } while (line.toLowerCase() != "exit");
 }
 
-String botLabel(int i){
-  switch(i){
-    case 0:{
-      return "Rock";
-    }
-    case 1:{
-      return "paper";
-    }
-    case 2:{
-      return "scissors";
-    }
+String botLabel(int i) {
+  switch (i) {
+    case 0:
+      {
+        return "Rock";
+      }
+    case 1:
+      {
+        return "Paper";
+      }
+    case 2:
+      {
+        return "Scissors";
+      }
   }
 
   return "no";
+}
+
+//ham tinh diem
+int getResult(String input, String botTurn) {
+  print("Bot turn is $botTurn");
+
+  switch (input.toLowerCase()) {
+    case "rock":
+      {
+        if (botTurn.toLowerCase() == "paper") {
+          return -1;
+        } else if (botTurn.toLowerCase() == "scissors") {
+          return 1;
+        } else {
+          return 0;
+        }
+      }
+    case "paper":
+      {
+        if (botTurn.toLowerCase() == "rock") {
+          return 1;
+        } else if (botTurn.toLowerCase() == "scissors") {
+          return -1;
+        } else {
+          return 0;
+        }
+      }
+    case "scissors":
+      {
+        if (botTurn.toLowerCase() == "rock") {
+          return -1;
+        } else if (botTurn.toLowerCase() == "paper") {
+          return 1;
+        } else {
+          return 0;
+        }
+      }
+  }
+
+  //truong hop hai ben hoa
+  return -2;
 }
