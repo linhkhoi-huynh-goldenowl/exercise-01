@@ -3,16 +3,22 @@ import 'dart:io';
 
 void main(List<String> arguments) {
   print("Nhập số: ");
-  String? line = stdin.readLineSync(encoding: utf8);
+  String line = stdin.readLineSync(encoding: utf8) ?? '0';
+  print(getShape(line));
+}
+
+String getShape(String line) {
   String canh = "|   ";
-  String day = " ...";
-  int n = int.parse(line!);
+  String canhEnd = "|";
+  String day = " ---";
+  int n = int.parse(line);
 
-  print(day*n);
-  for(var i=0;i<n;i++){
-    print(canh*(n+1));
-    print(day*n);
+  String result = "";
+
+  result = result + day * n + '\n';
+  for (var i = 0; i < n; i++) {
+    result = result + canh * n + canhEnd + '\n';
+    result = result + day * n + '\n';
   }
-
-  
+  return result;
 }
