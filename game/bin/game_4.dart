@@ -16,14 +16,19 @@ void main(List<String> arguments) {
   print("Welcome to Wheel of Fortune\nType 'exit' to stop the game\n");
   print("\n");
   List guess = <String>[];
-  for (var ques in questions) {
+  for (var i = 0; i < questions.length; i++) {
     guess = [];
     do {
-      if (showDisplay(ques, guess).contains("_")) {
-        print(showDisplay(ques, guess));
+      if (showDisplay(questions[i], guess).contains("_")) {
+        print(showDisplay(questions[i], guess));
       } else {
         print("You win");
-        print("Next Question");
+        if (i == questions.length - 1) {
+          print("THE END\n");
+        } else {
+          print("Next Question:\n");
+        }
+
         break;
       }
       print("Please guess a letter:");
@@ -35,7 +40,7 @@ void main(List<String> arguments) {
       if (line.length > 1 || line.isEmpty) {
         print("Please guess ONE letter");
       } else {
-        if (ques.contains(line)) {
+        if (questions[i].contains(line)) {
           guess.add(line);
         }
       }
