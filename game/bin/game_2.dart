@@ -3,15 +3,14 @@ import 'dart:io';
 import 'dart:math';
 
 void main(List<String> arguments) {
-  int count = 0;
   String? line;
   int numRand = Random().nextInt(101);
   do {
     print(
         "Type exit to quit the game\nPlease choose a number between 0 and 100:");
-    line = stdin.readLineSync(encoding: utf8);
+    line = stdin.readLineSync(encoding: utf8) ?? "0";
     int numChoose = -1;
-    if (isNumericUsingRegularExpression(line!)) {
+    if (isNumericUsingRegularExpression(line)) {
       numChoose = int.parse(line);
     }
     if (line.toLowerCase() == "exit") {
