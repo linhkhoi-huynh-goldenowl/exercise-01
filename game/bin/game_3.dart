@@ -3,14 +3,10 @@ import 'dart:io';
 import 'dart:math';
 
 void main(List<String> arguments) {
-  int cows = 0;
-  int bulls = 0;
   int count = 0;
   String? line;
   final _random = Random();
   int numRand = 1000 + _random.nextInt(9999 - 1000);
-
-  bool isWin = false;
 
   print(
       "Welcome to Cows and Bulls\nType 'exit' to stop the game\nPlease choose a four digit number:");
