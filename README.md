@@ -30,3 +30,22 @@
 - Vào VSCode mở folder exercise-01\print_divisor
 - Gõ lệnh bên dưới để chạy unit test
 > flutter test test/divisor_test.dart
+
+# Unit test 2
+
+## Đề bài:
+- Đầu vào là 2 danh sách, trả về danh sách chỉ chứa các số mà có trong 2 mảng đầu vào. Các số không được trùng
+
+## Ví dụ
+- Input:
+
+> "[1, 2, 3, 4], [3,4,5]"
+
+- Output:
+
+> "[3,4]"
+
+## Cách chạy unit test
+- Vào VSCode mở folder exercise-01\print_divisor
+- Gõ lệnh bên dưới để chạy unit test
+> flutter test test/unit_test_2_test.dart
