@@ -29,12 +29,20 @@ Cho sẵn một input kiểu dữ liệu String. Kiểm tra xem input đã đón
 ## Cách chạy unit test
 - Vào VSCode mở folder exercise-01\print_divisor
 - Gõ lệnh bên dưới để chạy unit test
+<<<<<<< HEAD
 > flutter test test/unit_test_1_test.dart
+=======
+> flutter test test/divisor_test.dart
+>>>>>>> main
 
 # Unit test 2
 
 ## Đề bài:
+<<<<<<< HEAD
 Đầu vào là 2 danh sách, trả về danh sách chỉ chứa các số mà có trong 2 mảng đầu vào. Các số không được trùng
+=======
+- Đầu vào là 2 danh sách, trả về danh sách chỉ chứa các số mà có trong 2 mảng đầu vào. Các số không được trùng
+>>>>>>> main
 
 ## Ví dụ
 - Input:
@@ -48,6 +56,7 @@ Cho sẵn một input kiểu dữ liệu String. Kiểm tra xem input đã đón
 ## Cách chạy unit test
 - Vào VSCode mở folder exercise-01\print_divisor
 - Gõ lệnh bên dưới để chạy unit test
+<<<<<<< HEAD
 > flutter test test/unit_test_2_test.dart
 
 # Unit test 3
@@ -213,3 +222,6 @@ output: print a square with input size squareSize
 
 
 
+=======
+> flutter test test/unit_test_2_test.dart
+>>>>>>> main
