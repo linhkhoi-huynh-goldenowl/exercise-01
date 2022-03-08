@@ -161,4 +161,30 @@ Ví dụ random 3684, và người dùng nhập 1234 thì cows = 1 (số 4) và 
 > dart run bin/game_3.dart
 
 
+# Game 4
+
+## Đề bài:
+Viết game chiếc nón kỳ diệu
+
+Khởi tạo là tự cần đoán và gợi ý của từ đó
+
+Người dùng nhập 1 ký tự bất kỳ để đoán
+
+Sau đó hiển thị các từ mà người chơi đã đoán đúng
+
+
+## Output:
+
+> ___ ___ ___ ___ ___ ___ ___ ___ ___ 
+>
+> Please guess a letter: r
+> ___ ___ ___ ___ ___ R ___ ___ ___ 
+>
+> Please guess a letter:
+## Cách chạy game
+- Vào VSCode mở folder exercise-01\game
+- Gõ lệnh bên dưới để chạy game
+> dart run bin/game_4.dart
+
+
 
