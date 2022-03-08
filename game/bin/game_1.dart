@@ -9,11 +9,11 @@ void main(List<String> arguments) {
   do {
     int botTurn = Random().nextInt(3);
 
-    line = stdin.readLineSync(encoding: utf8);
-    if (line?.toLowerCase() == "exit") {
+    line = stdin.readLineSync(encoding: utf8) ?? "no";
+    if (line.toLowerCase() == "exit") {
       break;
     }
-    int result = getResult(line!, botLabel(botTurn));
+    int result = getResult(line, botLabel(botTurn));
     if (result == -2) {
       print("PLEASE TYPE RIGHT ANSWER!!!\n");
     } else {
